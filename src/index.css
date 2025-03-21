@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body {
+  
+  background: rgb(252, 251, 251);
+  color: #162513;
+  font-family: outfit;
+  overflow-x: hidden;
+  
+
+}
+

@@ -1,0 +1,169 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 10%;
+  flex-wrap: wrap;
+  width: 100%; /* Ensure it occupies full width */
+  max-width: 1200px; /* Set max width to prevent stretching on larger screens */
+}
+
+.navbar img {
+  width: 100px;
+  height: 100px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 60px;
+  font-size: 20px;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+.nav-menu h1 {
+  margin-left: -17px;
+  margin-top: -30px;
+}
+
+.nav-connect {
+  padding: 20px 40px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #000000 0.36%, #000000 102.06%);
+  color: #ffffff;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.nav-connect:hover {
+  transform: scale(1.05);
+}
+
+.nav-menu li {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+/* Responsive Styles for Tablets */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 10px 5%; /* Reduce margin for smaller screens */
+  }
+
+  .nav-menu {
+      gap: 30px;
+      flex-direction: column;
+      width: 100%;
+      align-items: flex-start;
+  }
+
+  .nav-connect {
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+  }
+
+  .navbar img {
+      width: 80px;
+      height: 80px;
+  }
+}
+
+/* Mobile navigation open/close icons - initially hidden */
+.nav-mob-close{
+  display: none;
+}
+
+.nav-mob-open{
+  display: none;
+}
+
+/* Responsive Styles for Mobile */
+/* Responsive Styles for Mobile */
+@media (max-width: 480px) {
+  .navbar {
+      margin: 5px 2%; /* Further reduce margins for mobile screens */
+  }
+
+  .nav-menu {
+      font-size: 18px;
+      gap: 20px; /* Reduce gap further for mobile */
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+  }
+
+  .nav-connect {
+    margin-left: auto; /* Push the button to the right */
+    margin-right: 20px; /* Adds space to the right of the button */
+    width: auto; /* Let the button adjust based on its content */
+    font-size: 18px; /* Smaller font size for the connect button */
+    padding: 15px 15px; /* Adjust padding for smaller screens */
+    text-align: center; /* Ensure button text is centered */
+  }
+
+  .logo {
+    width: 30px;
+    padding: 15px;
+  }
+
+  .navbar img {
+      width: 30px; /* Even smaller logo for mobile */
+      height: 70px;
+      position: absolute;
+  }
+
+  /* Mobile menu button (hamburger menu) */
+  .nav-mob-open {
+    display: block;
+    position: fixed;
+    right: 30px;
+  }
+
+  .nav-mob-close {
+    display: block;
+    top: 10px;
+    left: 240px;
+    width: 25px;
+  }
+
+  /* Mobile menu */
+  .nav-menu {
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    top: 0;
+    gap: 30px;
+    background-color: #000000;
+    width: 300px;
+    height: 100%;
+    z-index: 2;
+    transition: right 0.5s;
+    color: #FFF;
+    right: -350px; /* Hidden by default */
+    padding-top: 90px;
+    padding-right: 10px;
+  }
+
+  .nav-menu li {
+    font-size: 30px;
+    padding-left: 100px;
+    flex-direction: row;
+    gap: 20px;
+    padding-right: 10px;
+  }
+
+  /* Show menu when mobile open button is clicked */
+  .nav-menu.nav-active {
+    right: 0; /* Slide in the menu */
+  }
+}
+
+

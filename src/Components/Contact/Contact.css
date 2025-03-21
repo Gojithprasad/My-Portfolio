@@ -1,0 +1,174 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+    
+}
+
+.contact-title {
+    position: relative;
+}
+
+.contact-title h1 {
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.contact-section {
+    display: flex;
+    gap: 150px;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-left h1 {
+    font-size: 80px;
+    font-weight: 700;
+    background: linear-gradient(267deg, #000000 0.36%, #000000 102.06%);
+    background-clip: text; /* This works in most browsers */
+    -webkit-background-clip: text; /* This is necessary for Safari */
+    -webkit-text-fill-color: transparent; /* This is necessary for Safari */
+    /* Fallback color for non-Safari browsers */
+    color: transparent; /* This will ensure color is transparent for most browsers */
+    background-size: 100%; /* Ensures the gradient covers the text correctly */
+    display: inline-block; /* This allows the background clip to work as intended */
+}
+
+.contact-left p {
+    max-width: 550px;
+    color: #000000;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #000000;
+    font-size: 22px;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+
+.contact-right label {
+    color: #000000;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.contact-right input {
+    border: none;
+    width: 630px; /* This will change for responsiveness */
+    height: 78px;
+    padding-left: 20px;
+    border-radius: 4px;
+    background: #d4d4d9;
+    font-family: Outfit;
+    font-size: 20px;
+}
+
+.contact-right textarea {
+    width: 630px; /* This will change for responsiveness */
+    border: none;
+    padding: 25px;
+    border-radius: 4px;
+    background: #d4d4d9;
+    font-family: Outfit;
+    font-size: 20px;
+}
+
+.contact-submit {
+    border: none;
+    color: #d4d4d9;
+    border-radius: 50px;
+    background: black;
+    font-size: 22px;
+    padding: 20px 60px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.contact-submit:hover {
+    transform: scale(1.1); /* Remove 's' for seconds */
+    transition: 0.6s;
+    color: #000000;
+    background: #d4d4d9;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact {
+        margin: 40px 20px; /* Reduce margin for smaller screens */
+    }
+
+    .contact-title h1 {
+        font-size: 50px; /* Smaller font size for title */
+    }
+
+    .contact-section {
+        flex-direction: column; /* Stack contact left and right sections */
+        gap: 40px; /* Adjust gap */
+    }
+
+    .contact-left h1 {
+        font-size: 60px; /* Adjust heading font size */
+    }
+
+    .contact-right input,
+    .contact-right textarea {
+        width: 100%; /* Make inputs and textareas full width */
+    }
+
+    .contact-submit {
+        padding: 15px 40px; /* Adjust button padding */
+        font-size: 20px; /* Adjust button font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        margin: 20px 10px; /* Further reduce margin for mobile */
+    }
+
+    .contact-title h1 {
+        font-size: 40px; /* Further reduce font size */
+    }
+
+    .contact-left h1 {
+        font-size: 50px; /* Further reduce heading font size */
+    }
+
+    .contact-right input,
+    .contact-right textarea {
+        width: 100%; /* Ensure full width on mobile */
+        padding: 10px;
+    }
+
+    .contact-submit {
+        padding: 12px 30px; /* Smaller button padding */
+        font-size: 18px; /* Smaller button font size */
+    }
+}
+
+

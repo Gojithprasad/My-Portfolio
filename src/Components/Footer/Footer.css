@@ -1,0 +1,81 @@
+.footer {
+    margin: 50px 170px; /* Margin for larger screens */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-top-left {
+    font-size: 20px; /* Font size for left section */
+    max-width: 400px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px; /* Font size for bottom section */
+}
+
+.footer-bottom-right {
+    display: flex;
+    gap: 50px; /* Gap between items */
+    margin-bottom: 50px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer {
+        margin: 30px 20px; /* Reduce margin for smaller screens */
+    }
+
+    .footer-top {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        text-align: center; /* Center align text */
+    }
+
+    .footer-top-left {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        text-align: center; /* Center align text */
+        padding: 0 10px; /* Add padding for better spacing */
+    }
+
+    .footer-bottom {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        font-size: 16px; /* Adjust font size for smaller screens */
+        padding: 0 10px; /* Add padding for better spacing */
+    }
+
+    .footer-bottom-right {
+        gap: 20px; /* Reduce gap between items */
+        flex-wrap: wrap; /* Allow items to wrap if needed */
+        justify-content: center; /* Center items */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        margin: 50px 10px; /* Further reduce margin for mobile */
+    }
+
+    .footer-top-left {
+        font-size: 16px; /* Further adjust font size */
+    }
+
+    .footer-bottom {
+        font-size: 14px; /* Further adjust font size */
+    }
+
+    .footer-bottom-right {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        gap: 15px; /* Reduce gap further for mobile */
+    }
+}
+
